@@ -4,12 +4,32 @@ html, body {
 body {
     opacity: 0;
     animation: fadeIn 0.9s ease forwards;
-    background: url("../../IMG/MAIN.jpg") no-repeat center center;
+/*    background: url("../../IMG/MAIN.jpg") no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;*/
     margin: 0;
     color: #fff;
     font-family: 'Segoe UI',sans-serif;
 }
 
+
+/* 背景専用レイヤー */
+.bg {
+    position: fixed; /* ←ここが重要 */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../../IMG/MAIN.jpg") no-repeat center center;
+    background-size: cover;
+    z-index: -1; /* コンテンツの後ろ */
+}
+
+/* コンテンツ側 */
+.wrapper {
+    position: relative;
+    z-index: 1;
+}
 /*配置関連*/
 .wrapper {
     display: flex;
@@ -26,26 +46,32 @@ body {
     text-shadow: 0 0 10px #a855f7;
 }
 .container {
-    display:flex;/*横並び*/
-    justify-content:center;
-    align-items:center;
-    height:100vh;
-    gap:3rem;
+    display: flex; /*横並び*/
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
 }
 
 
-
 /*カード系*/
-.card{
-    background:rgba(255, 255, 255, 0.05);
-    padding:3rem;
-    width:25rem;
-    height:16rem;
-    text-align:center;
-    font-size:1.5rem;
-    border:1px solid #333;
-    border-radius:1rem;
-    transition:0.5s;
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 3rem;
+    width: 30rem;
+    max-width: 90%;
+    height: 16rem;
+    text-align: center;
+    font-size: 1.5rem;
+    border: 1px solid #333;
+    border-radius: 1rem;
+    transition: 0.5s;
 }
 
 /*ホバー時*/
