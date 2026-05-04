@@ -4,9 +4,6 @@ html, body {
 body {
     opacity: 0;
     animation: fadeIn 0.9s ease forwards;
-/*    background: url("../../IMG/MAIN.jpg") no-repeat center center;
-    background-size: cover;
-    background-attachment: fixed;*/
     margin: 0;
     color: #fff;
     font-family: 'Segoe UI',sans-serif;
