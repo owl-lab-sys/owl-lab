@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    height: 100vh;
+    /* 背景画像 */
+    background: url("../../IMG/LGNimg.jpg") no-repeat center center;
+    background-size: cover;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* 暗いフィルター（これが重要） */
+.overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 中央コンテンツ */
+.content {
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    font-size: 6.5rem;
+    margin: 0;
+    letter-spacing: 5px;
+    /* ネオンっぽく */
+    text-shadow: 0 0 15px #a855f7;
+}
+
+p {
+    font-size: 3.5rem;
+    margin-bottom: 30px;
+}
+
+/* ボタン */
+button {
+    padding: 12px 30px;
+    font-size: 16px;
+    border: 1px solid #a855f7;
+    background: transparent;
+    color: #a855f7;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+    button:hover {
+        background: #a855f7;
+        color: black;
+        box-shadow: 0 0 20px #a855f7;
+    }
