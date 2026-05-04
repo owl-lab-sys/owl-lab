@@ -7,7 +7,7 @@ body {
     font-family: 'Segoe UI', sans-serif;
 }
 
-/* 暗いフィルター */
+/* 暗いフィルター（これが重要） */
 .overlay {
     width: 100%;
     height: 100%;
@@ -26,24 +26,27 @@ body {
 h1 {
     font-size: 6.5rem;
     margin: 0;
-    margin-bottom:17rem;
+    margin-bottom:18.5rem;
     letter-spacing: 5px;
-    /* ネオン */
+    /* ネオンっぽく */
     text-shadow: 0 0 15px #a855f7;
 }
 
-
 /* ボタン */
 button {
-    border: 1px solid #a855f7;
+    padding: 18px 60px;
+    font-size: 20px;
+    border: 2px solid #a855f7;
     background: transparent;
     color: #a855f7;
     cursor: pointer;
     transition: 0.3s;
+    border-radius: 8px; /* ちょい丸く */
 }
 
     button:hover {
         background: #a855f7;
         color: black;
-        box-shadow: 0 0 20px #a855f7;
+        box-shadow: 0 0 25px #a855f7;
+        transform: scale(1.05); /* 少し拡大 */
     }
