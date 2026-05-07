@@ -1,5 +1,5 @@
 ﻿function goHome() {
-    // ① フェードアウト開始
+    // フェードアウト開始
     document.body.classList.add("fade-out");
 
     setTimeout(() => {
@@ -20,3 +20,16 @@
 
     }, 500);
 }
+
+window.addEventListener("pageshow", () => {
+
+    // loading画面が残ってたら削除
+    const loading = document.querySelector(".loading-screen");
+
+    if (loading) {
+        loading.remove();
+    }
+
+    // fade-out状態も解除
+    document.body.classList.remove("fade-out");
+});
