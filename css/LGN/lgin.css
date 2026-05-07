@@ -4,13 +4,14 @@ html, body {
 body {
     margin: 0;
     height: 100vh;
-    /* ”wŒi‰æ‘œ */
-    background-color: #000;
-/*    –{”Ô—p*/
-    background: url("../../IMG/LGNimg.jpg") no-repeat center center;
-/*ŠJ”­ŠÂ‹«*/
-/*    background: url("../../IMG/LGNimg.jpg") no-repeat center center;*/
+    background-image: url("../../IMG/LGNimg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
+    background-color: #000;
+    /*ŠJ”­ŠÂ‹«*/
+    /*    background: url("../../IMG/LGNimg.jpg") no-repeat center center;*/
+/*    background-size: cover;*/
     font-family: 'Segoe UI', sans-serif;
     transition: opacity 0.5s ease;
 }
