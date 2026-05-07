@@ -6,7 +6,10 @@ body {
     height: 100vh;
     /* ”wŒi‰æ‘œ */
     background-color: #000;
+/*    –{”Ô—p*/
     background: url("/IMG/LGNimg.jpg") no-repeat center center;
+/*ŠJ”­ŠÂ‹«*/
+/*    background: url("../../IMG/LGNimg.jpg") no-repeat center center;*/
     background-size: cover;
     font-family: 'Segoe UI', sans-serif;
     transition: opacity 0.5s ease;

@@ -3,44 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <title>梟の研究所</title>
-    <link rel="stylesheet" href="css/MAIN/main.css" />
+
+    <!--本番用-->
+    <link rel="stylesheet" href="/css/MAIN/main.css" />
+    <!--開発用-->
+    <!--<link rel="stylesheet" href="../css/MAIN/main.css" />-->
 </head>
 <body>
     <div class="bg"></div>
+
     <div class="wrapper">
         <h1 class="title">好きなカードの所に進んでね</h1>
 
         <div class="container">
 
-            <!--OBS関連-->
-            <div class="card">
-                <h2>OBS関連</h2>
-                <p>配信に役立つ機能を用意</p>
-                <button>こちら→</button>
+            <div class="card" data-link="obs.html">
+                <div class="card-title">
+                    <h2>OBS関連</h2>
+                </div>
+
+                <div class="card-content">
+                    <p>配信に役立つ機能を用意</p>
+                </div>
             </div>
 
-            <!--遊び関連-->
-            <div class="card">
-                <h2>遊び感覚関連</h2>
-                <p>ちょっとした遊びができるよ</p>
-                <button>こちら→</button>
+            <div class="card" data-link="play.html">
+                <div class="card-title">
+                    <h2>遊び感覚関連</h2>
+                </div>
+
+                <div class="card-content">
+                    <p>ちょっとした遊びができるよ</p>
+                </div>
             </div>
 
-            <!--ゲーム関連-->
-            <div class="card">
-                <h2>ゲーム関連</h2>
-                <p>おすすめのゲームを紹介または自作ゲームを...</p>
-                <button>こちら→</button>
+            <div class="card" data-link="game.html">
+                <div class="card-title">
+                    <h2>ゲーム関連</h2>
+                </div>
+
+                <div class="card-content">
+                    <p>おすすめのゲームを紹介または自作ゲームを...</p>
+                </div>
             </div>
 
-            <!--今日のメモ-->
-            <div class="card">
-                <h2>今日のメモ</h2>
-                <p>配信で質問された内容をここに記載するぞ</p>
-                <button>こちら→</button>
+            <div class="card" data-link="memo.html">
+                <div class="card-title">
+                    <h2>今日のメモ</h2>
+                </div>
+
+                <div class="card-content">
+                    <p>配信で質問された内容をここに記載するぞ</p>
+                </div>
             </div>
+
         </div>
     </div>
-    <script src="js/MAIN/main.js"></script>
+
+    <!--本番用-->
+    <script src="/js/MAIN/main.js"></script>
+    <!--開発用-->
+    <!--<script src="../js/MAIN/main.js"></script>-->
 </body>
 </html>
