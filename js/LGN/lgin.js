@@ -21,15 +21,18 @@
     }, 500);
 }
 
-window.addEventListener("pageshow", () => {
+window.addEventListener("pageshow", (event) => {
 
-    // loading画面が残ってたら削除
-    const loading = document.querySelector(".loading-screen");
+    if (event.persisted) {
 
-    if (loading) {
-        loading.remove();
+        // loading削除
+        document.querySelectorAll(".loading-screen")
+            .forEach(el => el.remove());
+
+        // fade解除
+        document.body.classList.remove("fade-out");
+
+        // opacity復元
+        document.body.style.opacity = "1";
     }
-
-    // fade-out状態も解除
-    document.body.classList.remove("fade-out");
 });
